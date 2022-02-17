@@ -1,1 +1,1 @@
-# Introducción a Redes Neuronales usando Python (Español)
+# Introducción a Ciencia de Redes usando Python (Español)
