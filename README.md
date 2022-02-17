@@ -30,8 +30,8 @@ pip3 install pandas
 ``` 
 
 # Collaboration with 👥
-* Sergio Alcalá(https://github.com/saac)
-* Sergio Sánchez(https://github.com/pachichi)
+* [Sergio Alcalá](https://github.com/saac)
+* [Sergio Sánchez](https://github.com/pachichi)
 # Lenguages 🗣️
 
 * [English](https://github.com/J3xLe1988B3lx0x2E6/Network-Science_TSFC_UNAM/tree/main/Languages/English)
