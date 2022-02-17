@@ -29,7 +29,7 @@ pip3 install seaborn
 pip3 install pandas
 ``` 
 
-# Collaboration with.
+# Collaboration with 👥
 * Sergio Alcalá(https://github.com/saac)
 * Sergio Sánchez(https://github.com/pachichi)
 # Lenguages 🗣️
