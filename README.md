@@ -6,12 +6,17 @@
 
 
 # Requirements 📖
+* [Igraph](https://igraph.org/)
 * [NetworkX](https://networkx.org/)
 * [Python 3](https://docs.python.org/3/)
 * [Matplotlib](https://matplotlib.org/) or [Seaborn](https://seaborn.pydata.org/)
 * [Pandas](https://pandas.pydata.org/)
 
 ## How to install? ⁉️
+### Igraph
+```python
+pip3 install igraph
+```
 ### NetworkX
 ```python
 pip3 install networkx[default]
