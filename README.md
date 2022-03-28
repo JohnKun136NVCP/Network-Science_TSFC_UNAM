@@ -46,5 +46,5 @@ pip3 install pandas
 # Bibliography 📚
 * [Linked: How Everything Is Connected to Everything Else and What It Means for Business, Science, and Everyday Life (English Edition)](https://www.amazon.com.mx/gp/product/B06XC9JM6Y/ref=dbs_a_def_rwt_bibl_vppi_i1)
 * [Network Science](https://www.amazon.com.mx/gp/product/1107076269/ref=dbs_a_def_rwt_bibl_vppi_i6)
-* Both books you can buy them online. However, [*Network Science*](http://networksciencebook.com/)  is online if you don't want to buy it.
+* Both books you can buy them online. However, [*Network Science*](http://networksciencebook.com/chapter/1)  is online if you don't want to buy it.
 * There will be some notes about every chapter about the book *Linked*. You can find it in *Notes' section*.
