@@ -1,11 +1,13 @@
 # Introducción a Ciencia de Redes UNAM📉
 <p align = "center">
-<img src="https://thumbs.gfycat.com/TestyDisloyalChinchilla-size_restricted.gif"  width="750">
+<img src="https://thumbs.gfycat.com/TestyDisloyalChinchilla-size_restricted.gif"  width="650">
 </p>
 
 # ¿Qué es la Ciencia de Redes? 🌐
 
+
 Vamos a cambiar la pregunta ¿De dónde surge las Ciencia de Redes? Principalmente todo lo que nos rodea está en un *sistema complejo*, es decir, cuando nos comunicamos con otras personas través de **Facebook, WhatsApp, Gmail, etc.** Estamos dentro de una red, pero no solo eso, en nuestra familia hay una red  que nos relaciona entre amigos, familia, trabajo, entre otros factores que involucren a lo social. Pero también está el factor económico que influye en los bienes y servicios que uno recibe o mejor dicho que muchas personas reciben.
+
 
 # ¿Qué herramientas se necesita para estudiar Ciencia de Redes? ⚒️🔨
 Principalmente, es el fundamento matemático, ya que estaremos hablando de sistemas complejos. Sin embargo, se puede asociar a conocimientos de medicina, computación (programación), biología, la sociología, Neurología. Ya que la Ciencia de Redes está constituida de varias diciplinas.
