@@ -12,6 +12,11 @@
 * [Matplotlib](https://matplotlib.org/) or [Seaborn](https://seaborn.pydata.org/)
 * [Pandas](https://pandas.pydata.org/)
 
+## Install requirements (Fast) ⚡
+```python
+pip install -r requirements.txt
+```
+
 ## How to install? ⁉️
 ### Igraph
 ```python
