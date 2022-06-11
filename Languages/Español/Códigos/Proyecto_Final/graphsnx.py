@@ -119,6 +119,8 @@ def plot_louvain_graph(G):
                 plt.plot()
     except IndexError:
         return plot_louvain_graph(G)
+#View code references on jupyter notebook.
+#Ver referencia del código en la libreta de Jupyter. 
 def Dendogram_gn(G):
     dn = nx.community.girvan_newman(G)
     data = list(dn)
