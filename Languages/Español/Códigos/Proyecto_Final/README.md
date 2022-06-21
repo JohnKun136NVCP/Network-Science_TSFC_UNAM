@@ -53,7 +53,7 @@ Las redes que se analizaron fueron de Twitter (Re-tweet), Facebook (Friendship),
 # Conclusión.
 
 <div align = "justify">
-En conclusión, las redes que se analizó fueron las de Facebook, Twitter, Web Spam, resultaría fácil hacer spam mediante una página web pagando la publicidad, pero notemos que, aunque hagamos una gran publicidad los nodos más importantes están alejados de sí mismos. Sino que también se obtuvo algo interesante, gráficamente y como las redes son dirigidas tenemos más comunidades formadas en la red de Facebook que en la de Twitter esto nos da un resultado más contundente. Por tanto la red que conviene compartir información es mediante Facebook que podría alcanzar mayor publicidad y asociarla a un grupos en específicos ya que son las redes de amistades. 
+En conclusión, las redes que se analizó fueron las de Facebook, Twitter, Web Spam, resultaría fácil hacer spam mediante una página web pagando la publicidad, pero notemos que, aunque hagamos una gran publicidad los nodos más importantes están alejados de sí mismos. Sino que también se obtuvo algo interesante, gráficamente y como las redes son dirigidas tenemos más comunidades formadas en la red de Facebook que en la de Twitter esto nos da un resultado más contundente. Por tanto la red que conviene compartir información es mediante Facebook que podría alcanzar mayor publicidad y asociarla a un grupos en específicos ya que son las redes de amistades también podemos decir que la red de <b>Web Spam</b> es útil para tener público de interes.
 </div>
 
 
@@ -61,5 +61,6 @@ En conclusión, las redes que se analizó fueron las de Facebook, Twitter, Web S
 <div>
 <p align = "center">
 <img src = "https://ouch-cdn2.icons8.com/f6k2TTLiNHEboPORdESjI6orExzfNG5lQH3etHw6U34/rs:fit:459:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNjA4/Lzc3OWFlODgyLTlk/YjctNGFmNy04ZmU5/LTgwNWYzOTFkYTk1/OC5zdmc.png"  align = "center" width  = "85px">
+<img src = "https://ouch-cdn2.icons8.com/9YS56EsWBmn8uKE0T9CBXEWVpF_3l9_7wVfR5NcvzjA/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNzU1/L2Y3ODgzMzY0LTNj/ZjItNGRhZS04YjEz/LTc0YTE2MzFjMWIw/Zi5zdmc.png" align = "center"  width = "120px">
 </p>
 </div>
