@@ -116,11 +116,10 @@ def plot_louvain_graph(G):
                     nx.draw_networkx_nodes(G,pos,nodelist=g['part{0}'.format(x)],node_color=aux[x])
                     plt.scatter([],[],c = aux[x],label = 'Group {}'.format(x))
                 plt.legend()
+                plt.savefig("fig_{}.png".format(r))
                 plt.plot()
     except IndexError:
         return plot_louvain_graph(G)
-#View code references on jupyter notebook.
-#Ver referencia del código en la libreta de Jupyter. 
 def Dendogram_gn(G):
     dn = nx.community.girvan_newman(G)
     data = list(dn)
