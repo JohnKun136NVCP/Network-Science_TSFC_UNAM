@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram
 from itertools import chain, combinations
 
-
 """
 Writte.
 
