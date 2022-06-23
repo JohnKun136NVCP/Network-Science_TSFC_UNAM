@@ -1,11 +1,15 @@
 import seaborn as sb
 import matplotlib.pyplot as plt 
 import numpy as np
+from sympy import diag
 import colors as cs
 import random as rd
 from scipy.cluster.hierarchy import dendrogram
 from itertools import chain, combinations
 import networkx as nx
+import os
+
+
 
 
 __all__  = ['Diagram_conectivity','ssdc','NetEfficiency_Betenness','plot_louvain_graph','Dendogram_gn']
@@ -42,6 +46,12 @@ class graphplot:
     graphnetworkx.Diagrama_connectivity()
     '''
     def __init__(self,G):
+        path_abs = os.path.abspath(os.getcwd())
+        self.path = r'{}\Graphs'.format(path_abs)
+        try:
+            os.mkdir(self.path)
+        except OSError as error:
+            pass
         self.graphix = G
         self.distribution = []
         self.random = rd.randint(0,1000)
@@ -63,7 +73,14 @@ class graphplot:
         plt.ylabel("$\log{(k)}$")
         plt.xscale('log')
         plt.yscale('log')
-        plt.savefig("Diagram_log_{}".format(self.random))
+        self.path = self.path+str('\Diagram Connectivity')
+        try:
+            os.mkdir(self.path)
+        except OSError as error:
+            pass
+        name_pict = "Diagram log_{}.png".format(self.random)
+        diag_gram =os.path.join(self.path,name_pict)
+        plt.savefig(diag_gram)
     def ssdc(self):
         '''
         incoming_graph_data : input graph (G)
@@ -94,7 +111,14 @@ class graphplot:
         sb.scatterplot(x=p_t,y=wq,label ='Clustering.')
         plt.grid(True) 
         plt.xscale("log")
-        plt.savefig("Diagram_three_distributions_{}".format(self.random))
+        self.path = self.path+str('\Diagram Tree Distributions')
+        try:
+            os.mkdir(self.path)
+        except OSError as error:
+            pass
+        name_pict = "Diagram_three_distributions_{}.png".format(self.random)
+        diag_gram =os.path.join(self.path,name_pict)
+        plt.savefig(diag_gram)
     #Network Efficiency.
     def NetEfficiency_Betenness(self):
         '''
@@ -135,7 +159,6 @@ class graphplot:
         fm = []
         for j in Betwennessg.keys():
             try:
-                print("Nodo {} y Nodo {}. Eficiencia: {}".format(self.graphix,j,j+1))
                 ef.append(nx.efficiency(self.graphix,j,j+1))
                 fm.append({j,j+1})
             except:
@@ -146,8 +169,17 @@ class graphplot:
         plt.title("Efficiency Distribution Diagram.png")
         plt.xlabel("$\epsilon _{i}$")
         plt.ylabel("$K$")
-        plt.savefig("Efficiency Distribution Diagram.png")
-        plt.savefig('Efficiency and Betenness distribution diagram_{}.png'.format(self.random))
+        self.path = self.path+str('\ Newtork Effienciency Btwenness')
+        try:
+            os.mkdir(self.path)
+        except OSError as error:
+            pass
+        name_pict = "Efficiency Distribution Diagram.png"
+        name_pict_2 = 'Efficiency and Betenness distribution diagram_{}.png'.format(self.random)
+        diag_gram =os.path.join(self.path,name_pict)
+        plt.savefig(diag_gram)
+        diag_gram =os.path.join(self.path,name_pict_2)
+        plt.savefig(diag_gram)
     def plot_louvain_graph(self):
         '''
         Find the louvain communities and plot them with diferent colour nodes 
@@ -194,7 +226,14 @@ class graphplot:
                     nx.draw_networkx_nodes(self.graphix,pos,nodelist=g['part{0}'.format(x)],node_color=aux[x])
                     plt.scatter([],[],c = aux[x],label = 'Group {}'.format(x))
                 plt.legend()
-                plt.savefig("graph louvain communities_{}.png".format(self.random))
+                self.path = self.path+str('\Louvain graphs')
+                try:
+                    os.mkdir(self.path)
+                except OSError as error:
+                    pass
+                name_pict = "graph louvain communities_{}.png".format(self.random)
+                diag_gram =os.path.join(self.path,name_pict)
+                plt.savefig(diag_gram)
                 plt.plot()
     def Dendogram_gn(self):
         self.graphix = self.graphix
@@ -275,12 +314,20 @@ class graphplot:
                 k += 1
         # dendrogram
         plt.figure(figsize=(12,8))
-        plt.savefig('Dendogram_{}'.format(self.random))
+        self.path = self.path+str('\Dendogram Graphs')
+        try:
+            os.mkdir(self.path)
+        except OSError as error:
+            pass
+        name_pict = "Dendogram_{}.png".format(self.random)
+        diag_gram =os.path.join(self.path,name_pict)
+        plt.savefig(diag_gram)
         dendrogram(Z, labels=[node_labels[node_id] for node_id in leaves])
+        
 if '__name__'  == '__main__':
     try:
         graphplot = graphplot()
     except:
         pass
 graphplot.__doc__
-
+graphplot.plot_louvain_graph.__doc__
