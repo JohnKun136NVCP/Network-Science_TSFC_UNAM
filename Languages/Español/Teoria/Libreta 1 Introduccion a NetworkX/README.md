@@ -1,7 +1,6 @@
-<p>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Moreno_Sociogram_1st_Grade.png" align = "right"  width="90" height="90" />
+<p align="right">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Moreno_Sociogram_1st_Grade.png" align = "right"  width="60px" />
 </p>
-
 
 # Teoría de Ciencia de Redes.
 ## ¿Qué es la ciencia de redes? 📖🔎
@@ -12,39 +11,40 @@ Las Ciencias de redes se han ido contruyendo a lo largo del tiempo ya que se ha 
 
 ## Definición.
 
+
 * Un conjunto de vértices (o nodos) y,
 * Un conjunto de parejas ordenadas, llamadas **aristas** entre dos nodos. 
-<p>
-  <img src="img/grafo_1.png" align = "left"  width="200" />
+
+<p align="right">
+  <img src="img/grafo_1.png" align = "right"  width="100px" />
 </p>
 
-\begin{equation}
-    G=(V,E)
-\end{equation}
+
+$$ G=(V,E) $$
+
 Donde;
-\begin{equation}
-    V=\left\{v_{1},v_{2},\dots,v_{n}\right\} \ E\subseteq V\times V
-\end{equation}
+
+$$ V=\left\{v_{1},v_{2},\dots,v_{n}\right\} \ E\subseteq V\times V $$
+
 y 
-\begin{equation}
-    E=\left\{e_{1},e_{2},\dots,e_{m}|e_{i}=(v_{i},v_{j})\right\} \ v_{i}, v_{j}\in V
-\end{equation}
+
+$$ E=\left\{e_{1},e_{2},\dots,e_{m}|e_{i}=(v_{i},v_{j})\right\} \ v_{i}, v_{j}\in V $$
 
 
 
 ### Matriz de Adyacencia. 
 Es la representación del grafo como una matriz. 
+
 <p>
   <img src="img/grafo_1.png" align = "left"  width="200" />
 </p>
 
-\begin{equation}
-    a_{ij} = 1 \ si \ (v_{i},v_{j})\in E
-\end{equation}
-\begin{equation}
-    a_{ij} = 0 \ si \ (v_{i},v_{j})\not\in E
-\end{equation}
-\begin{equation}
+
+$$    a_{ij} = 1 \ si \ (v_{i},v_{j})\in E $$
+
+$$    a_{ij} = 0 \ si \ (v_{i},v_{j})\not\in E $$
+
+$$
 A = 
 \begin{pmatrix}
     0&1&1&1&1\\
@@ -53,7 +53,7 @@ A =
     1&1&0&0&0\\
     1&1&0&0&0
 \end{pmatrix}
-\end{equation}
+$$
 
 La matriz anterior es una matriz simétrica. Y a continuación sería
 los *grafos dirigidos y no dirigidos*.
@@ -217,7 +217,8 @@ nx.draw(gf)
 
 
     
-![png](output_4_1.png)
+![png](img/output_4_1.png)
+
     
 
 
