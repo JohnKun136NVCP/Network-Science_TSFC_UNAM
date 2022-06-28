@@ -57,11 +57,16 @@ $$
 
 La matriz anterior es una matriz simétrica. Y a continuación sería
 los *grafos dirigidos y no dirigidos*.
-<p>
-  <img src="img/grafo_3.png" align = "right"  width="200" />
-</p>
+
 
 ## Grafos sin auto-conexión, sin dirección, sin pesos. 🎈
+
+
+<p align="center">
+  <img src="img/grafo_3.png" align = "center"  width="250px" />
+</p>
+
+
 Para obtener las aristas de $n$ nodos es la manera de contar parejas.
 
 $$\sum_{i}^{n} i =\left(n\atop2\right) = \frac{n!}{2!(n-2)!} = \frac{n(n-1)}{2}$$
@@ -80,7 +85,7 @@ Si la red es **no dirigida** entonces $A$ es **simétrica**. Las **aristas** en 
 </p>
 
 <p>
-  <img src="img/grafo_5.png" align = "left"  width="250" />
+  <img src="img/grafo_5.png" align = "right"  width="250" />
 </p>
 </div>
 <br>
@@ -101,30 +106,39 @@ $$
     1&1&0&0&0
 \end{pmatrix}
 $$
-$$
 
+
+$$
     k = \frac{1}{N}\sum_{i}k_{i}
 $$
 
 **Definición.** *Densidad de red*. Cuando una red no tiene suficientes elementos o está "llenita" en su matriz de adyacencia se le dice que es una red *sparce*.
+
 $$
     \delta = \frac{|E|}{|E|_{maxima}} = \frac{L}{L_{maxima}}
 $$
+
 Para $N$ nodos;
+
+$$  
+L = |E|_{maxima} = \frac{N(N-1)}{2}
 $$
-    L = |E|_{maxima} = \frac{N(N-1)}{2}
+
+
 $$
-$$
-    \delta = \frac{2|E|}{N(N-1)}
+\delta = \frac{2|E|}{N(N-1)}
 $$
 
 Para una red *dirigida*.
+
+
 $$
     \delta = \frac{|E|}{N(N-1)}
 $$
 
 Entonces el **grado promedio de una red** se definiría así;
 1. *Una red sin dirección*.
+
 $$
     \langle k\rangle = \frac{2|E|}{N}; \ |E| = \sum_{i,j=1}^{N} A_{i,j} = \frac{1}{2}\sum_{i}^{N}k_{i}
 $$
@@ -134,7 +148,9 @@ $$
 $$
     \langle k\rangle = \frac{|E|}{N}; |E| = \sum_{i}^{N}k_{i}
 $$
+
 3. Pesada **sin dirección**.
+
 $$
     \langle k \rangle = \frac{2|E|}{N}; |E| = 2\sum_{i}^{N}k_{i}
 $$
@@ -144,16 +160,18 @@ $$
 Es el conjunto vértices y aristas. Es una subgráfica.
 
 **Promedio de los caminos mínimos entre dos nodos**;
+
 $$
     \bar{l} = \frac{1}{N(N-1)}\sum_{i\not=j} d(v_{i},v_{j})
 $$
+
 El efcto de **mundo pequeño**..
 
-\begin{equation}
+$$
     \bar{l}\approx\log(N)
-\end{equation}
+$$
 
-**Definición.** Un camino o *path* es una sub-red $p\subset G(V,E)$ de una red $G$, tal que $P = \left\{v_{p}\subset Vm E_{p}\subset E\right\}$, con $V_{p}=\left\{1,\dots,l\right\}$ y $E_{p}$ el cconjunto ordenado de aristas tal que $E_{p} = \left\{(1,2),\dots,(l-1,l)\right\}$, donde 1 es el nodo inicla del *path* y para cada arista en $E_{p}$ el punto final de cada arista, es el nodo inicial de la siguiente, de tal manera $l$ es el nodo final de $P$, y $l=|E_{p}|$ es la longitud del camino.
+**Definición.** Un camino o *path* es una sub-red $p\subset G(V,E)$ de una red $G$, tal que $P = \{v_{p}\subset Vm E_{p}\subset E\}$, con $V_{p}=\{1,\dots,l\}$ y $E_{p}$ el cconjunto ordenado de aristas tal que $E_{p} = \{(1,2),\dots,(l-1,l)\}$, donde 1 es el nodo inicla del *path* y para cada arista en $E_{p}$ el punto final de cada arista, es el nodo inicial de la siguiente, de tal manera $l$ es el nodo final de $P$, y $l=|E_{p}|$ es la longitud del camino.
 
 **Definición.** Ciclo. Es cuando un camino donde un nodo inicial y final es el mismo.
 
