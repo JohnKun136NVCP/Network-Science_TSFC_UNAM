@@ -24,11 +24,11 @@ $$ G=(V,E) $$
 
 Donde;
 
-$$ V=\left\{v_{1},v_{2},\dots,v_{n}\right\} \ E\subseteq V\times V $$
+$$ V=\{v_{1},v_{2},\dots,v_{n}\} \ E\subseteq V\times V $$
 
 y 
 
-$$ E=\left\{e_{1},e_{2},\dots,e_{m}|e_{i}=(v_{i},v_{j})\right\} \ v_{i}, v_{j}\in V $$
+$$ E={e_{1},e_{2},\dots,e_{m}|e_{i}=(v_{i},v_{j})\} \ v_{i}, v_{j}\in V $$
 
 
 
@@ -63,28 +63,36 @@ los *grafos dirigidos y no dirigidos*.
 
 ## Grafos sin auto-conexión, sin dirección, sin pesos. 🎈
 Para obtener las aristas de $n$ nodos es la manera de contar parejas.
-\begin{equation}
-    \sum_{i}^{n} i =\left(n\atop2\right) = \frac{n!}{2!(n-2)!} = \frac{n(n-1)}{2}
-\end{equation}
+
+$$\sum_{i}^{n} i =\left(n\atop2\right) = \frac{n!}{2!(n-2)!} = \frac{n(n-1)}{2}$$
 
 **Definición:** Si $N$ es el número de nodos, el número de aristas son:
-\begin{equation}
+$$
     |E|_{maxima} = \frac{N(N-1)}{2}
-\end{equation}
+$$
 
 Si la red es **no dirigida** entonces $A$ es **simétrica**. Las **aristas** en este caso serán ahora llamadas pesos. Este grafo **no dirigido** es **sin dirección** $e_{i,j} = a_{i,j}$, la conexión $i,j$ ahora se vuelve pesada $w_{i,j}=a_{i,j}$.
 
 **NOTACIÓN:** Si uno se fija en las conexiones que salen de los nodos quedaría la matriz $A$ que se mostrará en un momento. Pero si ahora se cuenta las conexiones que **entran** entonces la matriz cambia y es la transpuesta. 
+<div>
+<p>
+  <img src="img/grafo_4.png" align = "left"  width="250" />
+</p>
 
 <p>
-  <img src="img/grafo_4.png" align = "right"  width="250" />
+  <img src="img/grafo_5.png" align = "left"  width="250" />
 </p>
-<p>
-  <img src="img/grafo_5.png" align = "right"  width="250" />
-</p>
-**Definición.** La *red* de un grafo. Sea $G$ un grafo, $V$ los nodos y $E$ las aristas. La mejor forma de analizar este tipo de redes es mejor usar *la matriz de adyacencia* ya que se utiliza la definición de conjunto de parejas se pierde información que sirve para analizar una red. Entoces el grado o la conectividad e una red se define así:
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-\begin{equation}
+
+**Definición.**: La *red* de un grafo. Sea $G$ un grafo, $V$ los nodos y $E$ las aristas. La mejor forma de analizar este tipo de redes es mejor usar *la matriz de adyacencia* ya que se utiliza la definición de conjunto de parejas se pierde información que sirve para analizar una red. Entoces el grado o la conectividad e una red se define así:
+
+$$
 \begin{pmatrix}
     0&1&1&1&1\\
     1&0&0&1&1\\
@@ -92,52 +100,53 @@ Si la red es **no dirigida** entonces $A$ es **simétrica**. Las **aristas** en 
     1&1&0&0&0\\
     1&1&0&0&0
 \end{pmatrix}
-\end{equation}
-\begin{equation}
+$$
+$$
+
     k = \frac{1}{N}\sum_{i}k_{i}
-\end{equation}
+$$
 
 **Definición.** *Densidad de red*. Cuando una red no tiene suficientes elementos o está "llenita" en su matriz de adyacencia se le dice que es una red *sparce*.
-\begin{equation}
+$$
     \delta = \frac{|E|}{|E|_{maxima}} = \frac{L}{L_{maxima}}
-\end{equation}
+$$
 Para $N$ nodos;
-\begin{equation}
+$$
     L = |E|_{maxima} = \frac{N(N-1)}{2}
-\end{equation}
-\begin{equation}
+$$
+$$
     \delta = \frac{2|E|}{N(N-1)}
-\end{equation}
+$$
 
 Para una red *dirigida*.
-\begin{equation}
+$$
     \delta = \frac{|E|}{N(N-1)}
-\end{equation}
+$$
 
 Entonces el **grado promedio de una red** se definiría así;
 1. *Una red sin dirección*.
-\begin{equation}
+$$
     \langle k\rangle = \frac{2|E|}{N}; \ |E| = \sum_{i,j=1}^{N} A_{i,j} = \frac{1}{2}\sum_{i}^{N}k_{i}
-\end{equation}
+$$
 
 2. Dirigida.
 
-\begin{equation}
+$$
     \langle k\rangle = \frac{|E|}{N}; |E| = \sum_{i}^{N}k_{i}
-\end{equation}
+$$
 3. Pesada **sin dirección**.
-\begin{equation}
+$$
     \langle k \rangle = \frac{2|E|}{N}; |E| = 2\sum_{i}^{N}k_{i}
-\end{equation}
+$$
 
 # Árboles y caminos en redes.
 ## ¿Qué es un camino?
 Es el conjunto vértices y aristas. Es una subgráfica.
 
 **Promedio de los caminos mínimos entre dos nodos**;
-\begin{equation}
+$$
     \bar{l} = \frac{1}{N(N-1)}\sum_{i\not=j} d(v_{i},v_{j})
-\end{equation}
+$$
 El efcto de **mundo pequeño**..
 
 \begin{equation}
@@ -238,7 +247,7 @@ nx.draw(gf,with_labels = True, node_color = 'red', node_size = 500, font_color =
 
 
     
-![png](output_6_0.png)
+![png](img/output_6_0.png)
     
 
 
@@ -381,7 +390,7 @@ nx.draw(G,with_labels = True, node_color = 'pink', node_size = 400, font_color =
 
 
     
-![png](output_11_0.png)
+![png](img/output_11_0.png)
     
 
 
@@ -489,7 +498,7 @@ nx.draw(G_2, node_color = 'magenta',edge_color='blue', node_size = 100)
 
 
     
-![png](output_17_0.png)
+![png](img/output_17_0.png)
     
 
 
