@@ -152,7 +152,7 @@ Donde $N$ es el número de nodos.
 El modelo de *Watts-Strogatz* explica que las redes reales están entre una red regular y una red aleatoria como se muestra en este dibujo:
 
 <p align = "center">
-    <img src = "https://www.researchgate.net/profile/Marcos-Goncalves-9/publication/1955923/figure/fig4/AS:651193290342401@1532267987066/The-Watts-Strogatz-model-for-small-world-graphs-Edges-from-a-regular-ring-lattice-left.png"
+    <img src = "img/watts-strogatz.jpeg"
          align = "center"/>
 </p>
 
