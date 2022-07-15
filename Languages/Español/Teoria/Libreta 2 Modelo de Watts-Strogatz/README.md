@@ -51,7 +51,7 @@ De aquí podemos partir de un concepto que con anterioridad se vio que era el $k
 
 1. Para redes *no dirigidas*. El número de conexiones del nodo $i$, grado $i$.
 
-        $$k_{i} = g(i)  = \sum_{j=1}^{n}a_{ij}$$ 
+    $$k_{i} = g(i)  = \sum_{j=1}^{n}a_{ij}$$ 
 
     En donde se van sumando las filas de la matriz de adjyacencia pero también pueden ser las columnas.
 
@@ -101,7 +101,7 @@ Considere este grafo de [ResearchGate](https://www.researchgate.net/profile/Guil
 
 
 <p align = "center">
-    <img src = "https://www.researchgate.net/profile/Guilherme-Ferraz-De-Arruda/publication/324745118/figure/fig2/AS:619148942012418@1524628019444/An-example-of-clustering-coefficient-Three-network-configurations-that-result-in.png" width="450px"/>
+    <img src = "img/clustering.jpeg" width="450px"/>
 </p>
 
 Notemos que en la figura C es una red de estrella entonces $C_{i} = 0$ donde llamaremos a $C_{i}$ como *Clustering Coefficient de nodo* $i$.
@@ -252,7 +252,7 @@ nx.draw_circular(ws)
 
 
     
-![png](output_7_0.png)
+![png](img/output_7_0.png)
     
 
 
